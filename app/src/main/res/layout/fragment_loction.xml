@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.LoctionFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E1DA">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="كل ما تحتاجه في القدس"
+               android:textColor="#222455"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="من خدمات ومناطق سياحية"
+               android:textColor="#222455"
+               android:textSize="20sp"/>
+       </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLoction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLection"
+        tools:listitem="@layout/card_loction"/>
+
+</RelativeLayout>

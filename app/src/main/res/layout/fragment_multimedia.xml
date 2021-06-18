@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MultimediaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/music_choice"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/muisc_background">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_headset_24"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="أناشيد"
+                android:textSize="25sp"
+                android:textColor="#254278"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/image_choice"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/quds_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="صور الأقصى"
+                android:textSize="25sp"
+                android:textColor="#254278"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_choice"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/quds_background2"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="فيديو"
+                android:textSize="22sp"
+                android:textColor="#254278"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/video"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="الأقصى"
+                android:textSize="22sp"
+                android:textColor="#254278"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

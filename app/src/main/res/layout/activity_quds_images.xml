@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qudsImagesActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E1DA"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/back_but"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="#E4E1DA"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_but"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المسجد الأقصى"
+            android:textColor="#222455"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#E4E1DA"
+            android:layout_gravity="center"
+            android:src="@drawable/splachthree"
+            android:layout_weight="1"
+            android:scaleType="fitStart"/>
+
+        <ImageView
+            android:id="@+id/image_uploadImg"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_upload"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical|end"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/qudsImages_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+       />
+
+    <TextView
+        android:id="@+id/qudsImages_txt_noImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Images"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/qudsImages_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/qudsImages_img_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close"
+        android:layout_margin="15dp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

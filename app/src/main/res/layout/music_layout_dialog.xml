@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#052242"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/music_dialog_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_music_white"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/music_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم الأنشودة"
+            android:textColor="#fff"
+            android:fontFamily="@font/cairo_semibold"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/icon"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/music_dialog_play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_play"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/music_dialog_pause"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_pause"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
