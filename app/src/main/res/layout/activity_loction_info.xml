@@ -46,9 +46,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvLoctionInfo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/toolbarLection"
-        tools:listitem="@layout/card_loction_info"/>
+        />
 
 
 </LinearLayout>

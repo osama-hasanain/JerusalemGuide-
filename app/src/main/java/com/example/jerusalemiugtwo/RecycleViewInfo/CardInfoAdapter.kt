@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.jerusalemiugtwo.InfoActivity
 import com.example.jerusalemiugtwo.R
 import kotlinx.android.synthetic.main.card_info.view.*
@@ -32,12 +33,11 @@ class CardInfoAdapter (
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.titleR?.text = data[position].title
-        holder.imageInfo.setImageResource(data[position].image)
+        Glide.with(context).load(data[position].img).into(holder.imageInfo)
         holder.card.setOnClickListener {
             click.onClickItem(holder.adapterPosition)
             var intent = Intent(context, InfoActivity::class.java)
-            intent.putExtra("title",data[position].title)
-            intent.putExtra("image" , data[position].image)
+            intent.putExtra("info",data[position])
             context.startActivity(intent)
         }
     }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.jerusalemiugtwo.LoctionInfoActivity
 import com.example.jerusalemiugtwo.R
 import kotlinx.android.synthetic.main.card_loction_info.view.*
@@ -32,9 +33,8 @@ class CardLoctionInfoAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.title?.text = data[position].titleLo
-        holder.image.setImageResource(data[position].imageLo)
-
+        holder.title?.text = data[position].title
+        Glide.with(context).load(data[position].img).into(holder.image)
     }
 
 

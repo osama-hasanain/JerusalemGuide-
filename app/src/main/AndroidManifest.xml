@@ -12,7 +12,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JerusalemIUGTwo">
+        android:theme="@style/Theme.JerusalemIUGTwo"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
         <activity android:name=".LoctionInfoActivity"></activity>
         <activity android:name=".InfoActivity" />
         <activity android:name=".VideoPlayerActivity" />

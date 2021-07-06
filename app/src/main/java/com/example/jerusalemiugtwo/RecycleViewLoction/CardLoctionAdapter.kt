@@ -37,6 +37,7 @@ class CardLoctionAdapter(
             click.onClickItem(holder.adapterPosition)
             var intent = Intent(context, LoctionInfoActivity::class.java)
             intent.putExtra("titleLoction",data[position].title)
+            intent.putExtra("type",data[position].type)
             context.startActivity(intent)
         }
     }

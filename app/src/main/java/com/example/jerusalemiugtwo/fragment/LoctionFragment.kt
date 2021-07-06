@@ -23,14 +23,14 @@ class LoctionFragment : Fragment(),CardLoctionAdapter.onClick{
         var root = inflater.inflate(R.layout.fragment_loction, container, false)
 
         val data = mutableListOf<CardLoction>()
-        data.add(CardLoction(R.drawable.school,"مدارس تاريخية"))
-        data.add(CardLoction(R.drawable.mosquea,"مساجد"))
-        data.add(CardLoction(R.drawable.mosque,"القباب"))
-        data.add(CardLoction(R.drawable.gate,"بوابات الاقصى"))
-        data.add(CardLoction(R.drawable.minaret,"مآذن الأقصى"))
-        data.add(CardLoction(R.drawable.camera,"معالم اخرى"))
-        data.add(CardLoction(R.drawable.water,"أسبلة الأقصى"))
-        data.add(CardLoction(R.drawable.brick,"بوائك الأقصى"))
+        data.add(CardLoction(R.drawable.school,"مدارس تاريخية",2))
+        data.add(CardLoction(R.drawable.mosquea,"مساجد",1))
+        data.add(CardLoction(R.drawable.mosque,"القباب",4))
+        data.add(CardLoction(R.drawable.gate,"بوابات الاقصى",3))
+        data.add(CardLoction(R.drawable.minaret,"مآذن الأقصى",5))
+        data.add(CardLoction(R.drawable.camera,"معالم اخرى",6))
+        data.add(CardLoction(R.drawable.water,"أسبلة الأقصى",8))
+        data.add(CardLoction(R.drawable.brick,"بوائك الأقصى",7))
 
 
 
